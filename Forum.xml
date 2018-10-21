@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-
 <head>
   <meta charset='UTF-8'/>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   <meta content='ie=edge' http-equiv='X-UA-Compatible'/>
   <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' rel='stylesheet'/>
   <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'/>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'/>
   <title><data:blog.pageTitle/></title>
     <b:skin><![CDATA[
-body{padding-top: 50px}
-         
+body{padding-top: 50px}         
 /*
  * Sidebar
  */
@@ -91,34 +91,29 @@ body{padding-top: 50px}
  */
     ]]></b:skin>
 </head>
-
 <body>
-
-
-
 <nav class='navbar navbar-dark bg-dark fixed-top'>
-  <a class='navbar-brand' href='/'>F7DEAT</a>
+  <a class='navbar-brand' href='/'><i class='fa fa-comments-o'/> Qn Forum</a>
       <button aria-controls='navbarsExample01' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler collapsed' data-target='#navbarsExample01' data-toggle='collapse' type='button'>
         <span class='navbar-toggler-icon'/>
       </button>
-
       <div class='navbar-collapse collapse' id='navbarsExample01' style=''>
         <ul class='navbar-nav mr-auto'>
           <li class='nav-item active'>
-            <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
+            <a class='nav-link' href='/'><i class='fa fa-home'/> Home <span class='sr-only'>(current)</span></a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Link</a>
+            <a class='nav-link' href='/p/about.html'><i class='fa fa-user'/> About</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link disabled' href='#'>Disabled</a>
+            <a class='nav-link' href='/p/contact.html'><i class='fa fa-address-book'/> Contact</a>
           </li>
           <li class='nav-item dropdown'>
-            <a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='https://example.com' id='dropdown01'>Dropdown</a>
+            <a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='https://example.com' id='dropdown01'><i class='fa fa-th-list'/> More</a>
             <div aria-labelledby='dropdown01' class='dropdown-menu'>
-              <a class='dropdown-item' href='#'>Action</a>
-              <a class='dropdown-item' href='#'>Another action</a>
-              <a class='dropdown-item' href='#'>Something else here</a>
+              <a class='dropdown-item' href='/p/disclaimer.html'>Disclaimer</a>
+              <a class='dropdown-item' href='/p/privacy-policy.html'>Privacy Policy</a>
+              <a class='dropdown-item' href='/p/terms-of-use.html'>Terms of Use</a>
             </div>
           </li>
         </ul>
@@ -132,13 +127,13 @@ body{padding-top: 50px}
       <div class='row'>
         <nav class='col-md-2 d-none d-md-block bg-light sidebar'>
             <b:section class='sidebar-sticky' id='Sidebar' showaddelement='yes'>
-              <b:widget id='Label1' locked='false' title='Nhãn' type='Label' version='1'>
+              <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                  <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
                   <b:widget-setting name='display'>LIST</b:widget-setting>
                   <b:widget-setting name='selectedLabelsList'/>
                   <b:widget-setting name='showType'>ALL</b:widget-setting>
-                  <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+                  <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
@@ -185,25 +180,32 @@ body{padding-top: 50px}
         </nav>
 
         <main class='col-md-9 ml-sm-auto col-lg-10 px-4' role='main'>
+          <h2><i class='fa fa-comments-o'/> Qn Forum</h2>
+  <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
+    <h3>Ask Your Questions in Related Category</h3>
+  </div>
 <b:section class='main' id='Main Post' showaddelement='yes'>
-  <b:widget id='Blog1' locked='false' title='Bài đăng trên Blog' type='Blog' version='1'>
+  <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+      <b:widget-setting name='commentLabel'>Questions</b:widget-setting>
       <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='authorLabel'>By</b:widget-setting>
       <b:widget-setting name='showCommentLink'>true</b:widget-setting>
       <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
       <b:widget-setting name='showAuthor'>false</b:widget-setting>
       <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='timestampLabel'>Ngày</b:widget-setting>
-      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='reactionsLabel'>Vote</b:widget-setting>
+      <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
       <b:widget-setting name='showLabels'>true</b:widget-setting>
       <b:widget-setting name='showLocation'>false</b:widget-setting>
       <b:widget-setting name='postLabelsLabel'>Tag:</b:widget-setting>
-      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>false</b:widget-setting>
       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
       <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
@@ -353,7 +355,7 @@ body{padding-top: 50px}
   <div class='comments' id='comments'>
     <a name='comments'/>
     <b:if cond='data:post.allowComments'>
-      <h6 class="alert alert-secondary mx-2" role="alert"><data:post.commentLabelFull/>:</h6>
+      <h6 class='alert alert-secondary mx-2' role='alert'><data:post.commentLabelFull/>:</h6>
 
       <b:if cond='data:post.commentPagingRequired'>
         <span class='paging-control-container'>
@@ -804,7 +806,7 @@ body{padding-top: 50px}
       <div class='post-footer-line post-footer-line-2'>
       <span class='post-labels'>
         <b:if cond='data:top.showPostLabels and data:post.labels'>
-          <i class='fa fa-tags'></i> <data:postLabelsLabel/>
+          <i class='fa fa-tags'/> <data:postLabelsLabel/>
           <b:loop values='data:post.labels' var='label'>
             <a class='badge badge-pill badge-dark' expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
           </b:loop>
@@ -1073,14 +1075,12 @@ body{padding-top: 50px}
   <div class='comments' id='comments'>
     <a name='comments'/>
     <h4><data:post.commentLabelFull/>:</h4>
-
     <div class='comments-content'>
       <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
       <div id='comment-holder'>
          <data:post.commentHtml/>
       </div>
     </div>
-
     <p class='comment-footer'>
       <b:if cond='data:post.allowNewComments'>
         <b:include data='post' name='threaded-comment-form'/>
@@ -1088,14 +1088,12 @@ body{padding-top: 50px}
         <data:post.noNewCommentsText/>
       </b:if>
     </p>
-
     <b:if cond='data:showCmtPopup'>
       <div id='comment-popup'>
         <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
         </iframe>
       </div>
     </b:if>
-
     <div id='backlinks-container'>
     <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
       <b:include cond='data:post.showBacklinks' data='post' name='backlinks'/>
@@ -1105,13 +1103,11 @@ body{padding-top: 50px}
 </b:includable>
   </b:widget>
 </b:section>
-
-        </main>
-      </div>
-    </div>
-
-	<script src='https://code.jquery.com/jquery-3.3.1.min.js'/>
-	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'/>
+<footer class="container-fluid text-center">
+<p>Qn Forum Copyright Reserved 2018</p> 
+</footer>
+  </main>
+  </div>
+  </div>
 </body>
-
 </html>
