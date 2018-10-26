@@ -1,5 +1,5 @@
 # Forum Blogger Template
-This theme adapted from [Dinh Cong Tan](https://github.com/f7deat)
+This theme is adapted from [Dinh Cong Tan](https://github.com/f7deat)
 A Big Thanks to the Brain behind this theme.
 
 # Qn-Forum-Blogger
