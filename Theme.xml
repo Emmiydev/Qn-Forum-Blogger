@@ -1027,7 +1027,8 @@ body{padding-top:50px;}.sidebar{position:fixed;top:0;bottom:0;left:0;z-index:100
   </b:widget>
 </b:section>
 <footer class="container-fluid text-center">
-<p>Qn Forum Copyright Reserved 2018</p> 
+<p class='footer-link'>&#169; Copyright 2018 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
+</p>
 </footer>
   </main>
   </div>
