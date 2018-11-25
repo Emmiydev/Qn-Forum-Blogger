@@ -42,6 +42,11 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 </ul>
 </div>
 </nav>
+<div class='container-fluid'>
+<div class='row'>
+<nav class='col-md-2 d-none d-md-block bg-light sidebar'>
+<b:section class='sidebar-sticky' id='Sidebar' showaddelement='yes'/>
+</nav>
 <div class='container-fluid' id='pcweek'>
 <div class='alert alert-success alert-dismissible'>
   <a aria-label='close' class='close' data-dismiss='alert' href='/'/>
