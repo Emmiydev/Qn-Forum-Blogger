@@ -11,127 +11,8 @@
 <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'/>
 <title><data:blog.pageTitle/></title>
 <b:skin><![CDATA[
-body{padding-top: 70px}
-.btn-block {
-    width: 100%;
-}
-  .btn-secondary {
-    background-color: #212529;
-}     
-}
-.searchknowl {
-    margin: 0 auto;
-    background: #F16334;
-    padding: 20px;
-}
-.btn-vilot {
-    background: #212529;
-    padding: 10px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    font-weight: 700;
-    display: inline-block;
-    color: #fff;
-}
-#features-list {
-    padding: 30px 0;
-    background: #efefef;
-}
-.special-icon-img {
-    text-align: center;
-    padding: 12px;
-    background: #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    height: 245px;
-    margin: 10px;
-}
-.alert-success {
-    color: #fff;
-    background-color: #212529;
-    border-color: #212529;
-}
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100; /* Behind the navbar */
-  padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-}
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: .5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-}
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-.sidebar-sticky {
-position: -webkit-sticky;
-position: sticky;
-  }
-}
-.sidebar .nav-link {
-font-weight: 500;
-color: #333;
-}
-.sidebar .nav-link .feather {
-margin-right: 4px;
-color: #999;
-}
-.sidebar .nav-link.active {
-color: #007bff;
-}
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-color: inherit;
-}
-
-.sidebar-heading {
-font-size: .75rem;
-text-transform: uppercase;
-}
-[role="main"] {
-padding-top: 48px; /* Space for fixed navbar */
-}
-
-
-/*
- * Utilities
- */
-.entry-title{font-size: 1.25rem}
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; } 
-.jump-link {float:right}
-p.footer-link {
-    clear: both;
-    text-align: center;
-    font-size: 13px;
-    padding: 15px 12px;
-    overflow: hidden;
-    color: #F9F9F9;
-    background: #F16334;
-    line-height: 18px;
-}
-p.footer-link {
-clear: both;
-text-align: center;
-font-size: 13px;
-padding: 12px 12px;
-overflow: hidden;
-color: #F9F9F9;
-background: #232627;
-line-height: 18px;
-}
-p {
-margin-top: 0;
-margin-bottom: 0;
-}
-]]></b:skin>
+body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#212529;}}.searchknowl{margin:0 auto;background:#F16334;padding:20px;}.btn-vilot{background:#212529;padding:10px 30px;text-align:center;text-transform:uppercase;border-radius:5px;font-weight:700;display:inline-block;color:#fff;}#features-list{padding:30px 0;background:#efefef;}.special-icon-img{text-align:center;padding:12px;background:#fff;border-radius:10px;margin-bottom:20px;height:245px;margin:10px;}.alert-success{color:#fff;background-color:#212529;border-color:#212529;}[role="main"]{padding-top:48px;}.entry-title{font-size:1.25rem;}.border-top{border-top:1px solid #e5e5e5;}.border-bottom{border-bottom:1px solid #e5e5e5;}.jump-link{float:right;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:15px 12px;overflow:hidden;color:#F9F9F9;background:#F16334;line-height:18px;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:12px 12px;overflow:hidden;color:#F9F9F9;background:#232627;line-height:18px;}p{margin-top:0;margin-bottom:0;}.footer{left:0;bottom:0;width:100%;}.navbar-dark .navbar-nav .nav-link{color:rgb(255,255,255);}
+    ]]></b:skin>
 </head>
 <body>
 <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
@@ -142,7 +23,7 @@ margin-bottom: 0;
 <div class='navbar-collapse collapse' id='navbarsExample01' style=''>
 <ul class='navbar-nav mr-auto'>
 <li class='nav-item active'>
-<a class='nav-link' href='/'><i class='fa fa-home'/> Home <span class='sr-only'>(current)</span></a>
+<a class='nav-link' href='/'><i class='fa fa-home'/> Home</a>
 </li>
 <li class='nav-item'>
 <a class='nav-link' href='/p/about.html'><i class='fa fa-user'/> About</a>
@@ -163,49 +44,67 @@ margin-bottom: 0;
 </nav>
 <div class='container-fluid' id='pcweek'>
 <div class='alert alert-success alert-dismissible'>
-<a aria-label='close' class='close' data-dismiss='alert' href='/'/>
+  <a aria-label='close' class='close' data-dismiss='alert' href='/'/>
 <h3>Comment Your Questions in Related Category</h3>
 </div>
-<div class='searchknowl'>
 <form action='/search' class='nav-form-s' method='get' role='search'>
-<div class='form-group'>
-<input class='form-control form-ct-search' name='q' placeholder='Search Questions and Press Enter' type='text'/>
-</div>
-</form>
-</div>
+        <div class='form-group'>
+          <input class='form-control form-ct-search' name='q' placeholder='Search for your Questions' type='text'/>
+        </div>
+      </form>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <div id='features-list'>
-<div class='container'>
-<div class='row stacked'>
-<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
-<div class='special-icon-img'>
-<img alt='android' src='https://lh3.googleusercontent.com/-BF6hf10JmAY/W83CTgI06WI/AAAAAAAAAbY/e47Spzq2g_o0ej9lg4fSDXPgG2vtacloQCLcBGAs/s1600/android.png'/>
-<h5>Android</h5>
-<a class='btn btn-vilot btn-large' href='/2018/10/android.html'>Forum</a>
-</div>
-</div>
-<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
-<div class='special-icon-img'>
-<img alt='blogger' src='https://lh3.googleusercontent.com/-qDWJTY4AUA8/W83CTi2MgNI/AAAAAAAAAbc/sYvwIxszEhMw8DRbmCeddVGNjhAeVfbOgCLcBGAs/s1600/blogger.png'/>
-<h5>Blogger</h5>
-<a class='btn btn-vilot btn-large' href='/2018/10/blogger.html'>Forum</a></div></div>
-<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
-<div class='special-icon-img'>
-<img alt='electronics' src='https://lh3.googleusercontent.com/-67UlUUQOp8g/W83CTkU3GQI/AAAAAAAAAbg/XuRwl96VKVYEBKG92ITVGvb8Yj1koo11ACLcBGAs/s1600/electronics.png'/>
-<h5>Electronics</h5>              
-<a class='btn btn-vilot btn-large' href='/2018/10/electronics.html'>Forum</a>
-</div>
-</div>
-<div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
-<div class='special-icon-img'>
-<img alt='wordpress' src='https://lh3.googleusercontent.com/--67GfnVWrB0/W83CUYIdWkI/AAAAAAAAAbk/-jxvJ-IeM1Mh5MfLGsfdopb85Nd4hdGxACLcBGAs/s1600/wordpress.png'/>
-<h5>Wordpress</h5>              
-<a class='btn btn-vilot btn-large' href='/2018/10/wordpress.html'>Forum</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+      <div class='container'>
+        <div class='row stacked'>
+          <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+            <div class='special-icon-img'>
+              <img alt='android' src='https://lh3.googleusercontent.com/-BF6hf10JmAY/W83CTgI06WI/AAAAAAAAAbY/e47Spzq2g_o0ej9lg4fSDXPgG2vtacloQCLcBGAs/s1600/android.png'/>
+              <h5>
+                Android
+              </h5>
+              
+              <a class='btn btn-vilot btn-large' href='/2018/10/android.html'>
+                Forum
+              </a>
+            </div>
+          </div>
+          <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+            <div class='special-icon-img'>
+              <img alt='blogger' src='https://lh3.googleusercontent.com/-qDWJTY4AUA8/W83CTi2MgNI/AAAAAAAAAbc/sYvwIxszEhMw8DRbmCeddVGNjhAeVfbOgCLcBGAs/s1600/blogger.png'/>
+              <h5>
+                Blogger
+              </h5>
+              
+              <a class='btn btn-vilot btn-large' href='/2018/10/blogger.html'>
+                Forum
+              </a>
+            </div>
+          </div>
+          <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+            <div class='special-icon-img'>
+              <img alt='electronics' src='https://lh3.googleusercontent.com/-67UlUUQOp8g/W83CTkU3GQI/AAAAAAAAAbg/XuRwl96VKVYEBKG92ITVGvb8Yj1koo11ACLcBGAs/s1600/electronics.png'/>
+              <h5>
+                Electronics
+              </h5>              
+              <a class='btn btn-vilot btn-large' href='/2018/10/electronics.html'>
+                Forum
+              </a>
+            </div>
+          </div>
+          <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3 special-icon'>
+            <div class='special-icon-img'>
+              <img alt='wordpress' src='https://lh3.googleusercontent.com/--67GfnVWrB0/W83CUYIdWkI/AAAAAAAAAbk/-jxvJ-IeM1Mh5MfLGsfdopb85Nd4hdGxACLcBGAs/s1600/wordpress.png'/>
+              <h5>
+                Wordpress
+              </h5>              
+              <a class='btn btn-vilot btn-large' href='/2018/10/wordpress.html'>
+                Forum
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </b:if> 
 <b:section class='main' id='Main Post' showaddelement='yes'>
    <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
@@ -233,13 +132,15 @@ margin-bottom: 0;
        <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
        <b:widget-setting name='showInlineAds'>false</b:widget-setting>
        <b:widget-setting name='showReactions'>false</b:widget-setting>
-    </b:widget-settings>
-       <b:includable id='main' var='top'>
-       <b:if cond='!data:mobile'>
+     </b:widget-settings>
+     <b:includable id='main' var='top'>
+  <b:if cond='!data:mobile'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
-    <b:include data='top' name='status-message'/>
-    <b:loop values='data:posts' var='post'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:loop values='data:posts' var='post'>
         <b:if cond='data:post.isDateStart and not data:post.isFirstPost'>
           &lt;/div&gt;&lt;/div&gt;
         </b:if>
@@ -256,6 +157,7 @@ margin-bottom: 0;
           <b:include data='post' name='post'/>
           <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
         </div>
+
         <!-- Ad -->
         <b:if cond='data:post.includeAd'>
           <div class='inline-ad'>
@@ -267,13 +169,17 @@ margin-bottom: 0;
         &lt;/div&gt;&lt;/div&gt;
       </b:if>
     </div>
+
     <!-- navigation -->
     <b:include name='nextprev'/>
+
     <!-- feed links -->
     <b:include name='feedLinks'/>
+
   <b:else/>
     <b:include name='mobile-main'/>
   </b:if>
+
   <b:include cond='data:top.showPlusOne' name='googlePlusBootstrap'/>
 </b:includable>
      <b:includable id='backlinkDeleteIcon' var='backlink'>
@@ -1052,6 +958,7 @@ margin-bottom: 0;
         'config': configJso,
         'messages': msgs
       };
+
       var render = function() {
         if (window.goog && window.goog.comments) {
           var holder = document.getElementById('comment-holder');
@@ -1105,15 +1012,9 @@ margin-bottom: 0;
    </b:widget>
  </b:section>
   </div>
-<div id='footer'>
-      <p class='footer-link'>
-        &#169; Copyright 2018 
-        <a expr:href='data:blog.homepageUrl'>
-          <strong>
-            <data:blog.title/>
-          </strong>
-        </a>
-     </p>
-    </div>
+<div class='footer'>
+<p class='footer-link'>&#169; Copyright 2018 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
+</p>
+</div>
 </body>
 </html>
