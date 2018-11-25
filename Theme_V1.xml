@@ -44,9 +44,6 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 </nav>
 <div class='container-fluid'>
 <div class='row'>
-<nav class='col-md-2 d-none d-md-block bg-light sidebar'>
-<b:section class='sidebar-sticky' id='Sidebar' showaddelement='yes'/>
-</nav>
 <div class='container-fluid' id='pcweek'>
 <div class='alert alert-success alert-dismissible'>
   <a aria-label='close' class='close' data-dismiss='alert' href='/'/>
@@ -1021,5 +1018,7 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 <p class='footer-link'>&#169; Copyright 2018 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
 </p>
 </div>
+  </div>
+  </div>
 </body>
 </html>
