@@ -4,7 +4,8 @@ A Big Thanks to the Brain behind this theme.
 
 # Qn-Forum-Blogger
 Edited and Modified for Forum Template for Blogger by Muhammed Fasil K
-official Tech Blog [PC Week](https://www.pcweek.in)
+
+Official Tech Blog [PC Week](https://www.pcweek.in)
 
 [Latest Demo]
 
