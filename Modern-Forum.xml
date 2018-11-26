@@ -16,7 +16,7 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 </head>
 <body>
 <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
-<a class='navbar-brand' href='/'><i class='fa fa-code'/> Qn Forum</a>
+  <a class='navbar-brand' href='/'><i class='fa fa-comment'/> <strong>Qn Forum</strong></a>
 <button aria-controls='navbarsExample01' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarsExample01' data-toggle='collapse' type='button'>
 <span class='navbar-toggler-icon'/>
 </button>
@@ -42,9 +42,12 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 </ul>
 </div>
 </nav>
-<div class='container-fluid'>
-<div class='row'>
 <div class='container-fluid' id='pcweek'>
+<div class='row'>
+<div class='col-md-2 d-none d-md-block bg-light sidebar'>
+<b:section class='sidebar-sticky' id='Sidebar' showaddelement='yes'/>
+  </div>
+<div class='col-md-9 ml-sm-auto col-lg-10 px-4'>
 <div class='alert alert-success alert-dismissible'>
   <a aria-label='close' class='close' data-dismiss='alert' href='/'/>
 <h3>Comment Your Questions in Related Category</h3>
@@ -1018,7 +1021,7 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
 <p class='footer-link'>&#169; Copyright 2018 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
 </p>
 </div>
-  </div>
-  </div>
+</div>
+</div>
 </body>
 </html>
