@@ -116,15 +116,15 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
      <b:widget-settings>
        <b:widget-setting name='showDateHeader'>false</b:widget-setting>
        <b:widget-setting name='commentLabel'>Questions</b:widget-setting>
-       <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+       <b:widget-setting name='style.textcolor'>#00c8d7</b:widget-setting>
        <b:widget-setting name='showShareButtons'>true</b:widget-setting>
        <b:widget-setting name='authorLabel'>By</b:widget-setting>
        <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-       <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+       <b:widget-setting name='style.urlcolor'>#00c8d7</b:widget-setting>
        <b:widget-setting name='showAuthor'>false</b:widget-setting>
-       <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+       <b:widget-setting name='style.linkcolor'>#00c8d7</b:widget-setting>
        <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+       <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
        <b:widget-setting name='reactionsLabel'>Vote</b:widget-setting>
        <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
        <b:widget-setting name='style.layout'>1x1</b:widget-setting>
@@ -134,7 +134,7 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
        <b:widget-setting name='showTimestamp'>false</b:widget-setting>
        <b:widget-setting name='postsPerAd'>1</b:widget-setting>
        <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-       <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+       <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
        <b:widget-setting name='showInlineAds'>false</b:widget-setting>
        <b:widget-setting name='showReactions'>false</b:widget-setting>
      </b:widget-settings>
@@ -142,7 +142,40 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
   <b:if cond='!data:mobile'>
     <!-- posts -->
     <div class='blog-posts hfeed'>
-
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<p class='breadcrumbs'>
+        <span class='post-labels'>
+        <a expr:href='data:blog.homepageUrl' rel='tag'>Home</a>
+        <b:loop values='data:posts' var='post'>
+            <b:if cond='data:post.labels'>
+            <b:loop values='data:post.labels' var='label'>
+                <b:if cond='data:label.isLast == true'> &#187;
+                    <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
+                </b:if>
+            </b:loop>
+            <b:else/>
+            &#187; Unlabelled
+            </b:if>
+            &#187; <span><data:post.title/></span>
+        </b:loop>
+        </span>
+    </p>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<p class='breadcrumbs'>
+  <a expr:href='data:blog.homepageUrl'>Home</a> &#187; <data:blog.pageName/>
+</p>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+    <p class='breadcrumbs'>
+      <a expr:href='data:blog.homepageUrl'>Home</a> &#187; <data:blog.pageName/>
+    </p>
+</b:if>
+<b:if cond='data:blog.searchLabel'>
+    <p class='breadcrumbs'>
+      <a expr:href='data:blog.homepageUrl'>Home</a> &#187; <data:blog.pageName/>
+    </p>
+</b:if>
       <b:include data='top' name='status-message'/>
 
       <b:loop values='data:posts' var='post'>
