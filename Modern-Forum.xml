@@ -7,11 +7,9 @@
 <meta content='ie=edge' http-equiv='X-UA-Compatible'/>
 <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' rel='stylesheet'/>
 <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
-<script src='https://code.jquery.com/jquery-3.3.1.min.js'/>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'/>
 <title><data:blog.pageTitle/></title>
 <b:skin><![CDATA[
-body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#212529;}}.searchknowl{margin:0 auto;background:#F16334;padding:20px;}.btn-vilot{background:#212529;padding:10px 30px;text-align:center;text-transform:uppercase;border-radius:5px;font-weight:700;display:inline-block;color:#fff;}#features-list{padding:30px 0;background:#efefef;}.special-icon-img{text-align:center;padding:12px;background:#fff;border-radius:10px;margin-bottom:20px;height:245px;margin:10px;}.alert-success{color:#fff;background-color:#212529;border-color:#212529;}[role="main"]{padding-top:48px;}.entry-title{font-size:1.25rem;}.border-top{border-top:1px solid #e5e5e5;}.border-bottom{border-bottom:1px solid #e5e5e5;}.jump-link{float:right;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:15px 12px;overflow:hidden;color:#F9F9F9;background:#F16334;line-height:18px;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:12px 12px;overflow:hidden;color:#F9F9F9;background:#232627;line-height:18px;}p{margin-top:0;margin-bottom:0;}.footer{left:0;bottom:0;width:100%;}.navbar-dark .navbar-nav .nav-link{color:rgb(255,255,255);}
+body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#212529;}}.searchknowl{margin:0 auto;background:#F16334;padding:20px;}.btn-vilot{background:#212529;padding:10px 30px;text-align:center;text-transform:uppercase;border-radius:5px;font-weight:700;display:inline-block;color:#fff;}#features-list{padding:30px 0;background:#efefef;}.special-icon-img{text-align:center;padding:12px;background:#fff;border-radius:10px;margin-bottom:20px;height:245px;margin:10px;}.alert-success{color:#fff;background-color:#212529;border-color:#212529;}[role="main"]{padding-top:48px;}.entry-title{font-size:1.25rem;}.border-top{border-top:1px solid #e5e5e5;}.border-bottom{border-bottom:1px solid #e5e5e5;}.jump-link{float:right;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:15px 12px;overflow:hidden;color:#F9F9F9;background:#F16334;line-height:18px;}p.footer-link{clear:both;text-align:center;font-size:13px;padding:12px 12px;overflow:hidden;color:#F9F9F9;background:#232627;line-height:18px;}p{margin-top:0;margin-bottom:0;}.footer{left:0;bottom:0;width:100%;}.navbar-dark .navbar-nav .nav-link{color:rgb(255,255,255);}.comments{padding:5px}#blog-pager-older-link{float:right;display:none}.feed-links{padding:5px 3px;margin:10px 5px;background-color:#dc3545;width:fit-content;color:white;border-radius:5px}.feed-links a{color:white;text-decoration:none}
     ]]></b:skin>
 </head>
 <body>
@@ -122,6 +120,7 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
        <b:widget-setting name='showCommentLink'>true</b:widget-setting>
        <b:widget-setting name='style.urlcolor'>#00c8d7</b:widget-setting>
        <b:widget-setting name='showAuthor'>false</b:widget-setting>
+       <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
        <b:widget-setting name='style.linkcolor'>#00c8d7</b:widget-setting>
        <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
        <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
@@ -1051,10 +1050,12 @@ body{padding-top:70px;}.btn-block{width:100%;}.btn-secondary{background-color:#2
  </b:section>
   </div>
 <div class='footer'>
-<p class='footer-link'>&#169; Copyright 2018 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
+<p class='footer-link'>&#169; Copyright 2019 <strong><data:blog.title/></strong> Theme By <a href='https://www.pcweek.in' rel='dofollow' target='_blank'>PC Week</a>
 </p>
 </div>
 </div>
 </div>
 </body>
+<script async='async' defer='defer' src='https://code.jquery.com/jquery-3.3.1.min.js'/>
+<script async='async' defer='defer' src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js'/>
 </html>
