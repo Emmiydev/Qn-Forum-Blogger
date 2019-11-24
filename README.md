@@ -7,7 +7,7 @@ A Big Thanks to the Brain behind this theme.
 
 Edited and Modified for Forum Template for Blogger by Muhammed Fasil K
 
-Official Tech Blog [PC Week](https://www.pcweek.in)
+Blog [Bloginoobs](https://bloginoobs.blogspot.com)
 
 # Latest Demo
 
@@ -23,4 +23,4 @@ Official Tech Blog [PC Week](https://www.pcweek.in)
 
 # Documentation
 
-[Forum Templates for Blogger](https://www.pcweek.in/2018/12/forum-templates-for-blogger.html)
+[Forum Templates for Blogger](https://bloginoobs.blogspot.com/2019/11/forum-template-for-blogger.html)
