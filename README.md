@@ -1,11 +1,13 @@
 # Forum Blogger Template
 
 This theme is adapted from [Dinh Cong Tan](https://github.com/f7deat)
-A Big Thanks to the Brain behind this theme.
+A Big Thanks to Dinh Cong Tan.
 
 # Qn-Forum-Blogger
 
-Edited and Modified for Forum Template for Blogger by Muhammed Fasil K
+Edited and Modified for Forum Template for Blogger
+
+For detailed setup guides, please refer the documentation section below.
 
 Blog [Bloginoobs](https://bloginoobs.blogspot.com)
 
