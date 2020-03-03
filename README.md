@@ -9,8 +9,6 @@ Edited and Modified for Forum Template for Blogger
 
 For detailed setup guides, please refer the documentation section below.
 
-Blog [Bloginoobs](https://bloginoobs.blogspot.com)
-
 # Latest Demo
 
 [Qn Forum](https://qnforum.blogspot.com/)
